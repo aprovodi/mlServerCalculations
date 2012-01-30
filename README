@@ -1,0 +1,13 @@
+short instructions:
+
+1.the first thing to do is, install jsonrpc, simplejson, mod_python(configured with apache) and pyjamas.
+
+2. .htaccess in mlServerCalculations/public/services (should be copied to mlServerCalculations/output/services) folder contains
+        Options FollowSymLinks
+        PythonPath "['path to services']+sys.path"
+        AddHandler mod_python .py
+        PythonHandler vlayouts
+        PythonDebug On
+where 'path to services' must be set to the ...mlServerCalculations/output/services
+
+3. run as 'path to pyjamas'/bin/pyjsbuild MLAlgorithms.py
