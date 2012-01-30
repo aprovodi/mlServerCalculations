@@ -1,0 +1,5 @@
+Options FollowSymLinks
+PythonPath "['/home/aprovodi/simpleserver/MLAlgorithms/output/services']+sys.path"
+AddHandler mod_python .py .txt
+PythonHandler mlOctaveAlgorithms
+PythonDebug On
